@@ -3,18 +3,17 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		int month = scanner.nextInt();
-		int day = scanner.nextInt();
-
-		int daysInMonth[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-		
-		String days[] = {"SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"};
-		
-		for(int i = 0; i < month - 1; i++) {
-			day += daysInMonth[i];
+		Scanner sc = new Scanner(System.in);
+		int i = sc.nextInt();
+		for(int j = 0; j < i; j++) {
+			for(int k = 0; k < (j + 1); k++) {
+				System.out.print("*");
+			}
+			System.out.println();
 		}
-		System.out.println(days[day % 7]);
+		
+		
+		
 		
 	}
 
