@@ -5,10 +5,8 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();
-		for(int i = num; i < num + 1; i++) {
-			for(int k = 1; k < 10; k++) {
-				System.out.println(num + " * " + k + " = " + (k*num));
-			}
+		for(int i = 1; i < num + 1; i++) {
+			System.out.println(i);
 		}
 	}
 
